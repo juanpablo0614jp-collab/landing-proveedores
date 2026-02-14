@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Zap, Settings, ScanSearch } from "lucide-react";
 import { Logo, Btn } from "./ui";
+import { UserCircle } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Problema", href: "#problema" },
@@ -16,6 +17,7 @@ const NAV_LINKS = [
 ];
 
 const DEMO_LINKS = [
+  { label: "Portal", href: "/portal-proveedor", icon: UserCircle },
   { label: "Demo Rápido", href: "/demo-rapido", icon: Zap },
   { label: "Demo Completo", href: "/demo-completo", icon: Settings },
   { label: "Demo OCR", href: "/demo-ocr", icon: ScanSearch },

@@ -6,8 +6,11 @@ import { ArrowLeft, Zap, Settings, ScanSearch, Bell, RotateCcw, Database } from 
 import { motion, AnimatePresence } from "framer-motion";
 import { Logo } from "./ui";
 import { useDemoStore } from "@/context/DemoStore";
+import { UserCircle } from "lucide-react";
+
 
 const DEMO_LINKS = [
+  { label: "Portal", href: "/portal-proveedor", icon: UserCircle },
   { label: "Rápido", href: "/demo-rapido", icon: Zap },
   { label: "Completo", href: "/demo-completo", icon: Settings },
   { label: "OCR", href: "/demo-ocr", icon: ScanSearch },
