@@ -153,9 +153,7 @@ export default function PortalProveedor() {
           <DemoCard>
             {/* Header */}
             <div className="flex flex-col items-center text-center mb-6">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-navy to-accent flex items-center justify-center mb-3">
-                <Lock className="w-6 h-6 text-white" />
-              </div>
+              <img src="/PageGroup_Logo.png" alt="PageGroup" className="h-14 object-contain mb-3" />
               <h3 className="text-lg font-extrabold text-navy">Iniciar sesión</h3>
               <p className="text-xs text-gray-400 mt-1">Ingresa tus credenciales para acceder al portal</p>
             </div>

@@ -147,6 +147,10 @@ export default function DemoCompleto() {
             className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-navy text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-lg">{toast}</motion.div>
         )}
       </AnimatePresence>
+      {/* Logo */}
+<div className="flex justify-center mb-6">
+  <img src="/PageGroup_Logo.png" alt="PageGroup" className="h-10 object-contain opacity-80" />
+</div>
 
       {/* ─── Stats row ─── */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">

@@ -184,9 +184,17 @@ export default function DemoOCR() {
         </DemoCard>
 
         {/* Upload */}
-        <DemoCard delay={0.1}>
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-base font-bold text-navy">Subir documento</h3>
+        <DemoCard delay={0.1} className="relative overflow-hidden">
+          {/* Watermark */}
+          <img
+            src="/PageGroup_Logo.png"
+            alt=""
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 object-contain opacity-[0.2] pointer-events-none"
+            aria-hidden="true"
+          />
+          <div className="relative">
+           <div className="flex items-center justify-between mb-4">
+             <h3 className="text-base font-bold text-navy">Subir documento</h3>
             {file && <button onClick={reset} className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-400 hover:text-navy">
               <RotateCcw className="w-3.5 h-3.5" /> Reiniciar
             </button>}
@@ -200,6 +208,7 @@ export default function DemoOCR() {
               </button>
             </motion.div>
           )}
+          </div>
         </DemoCard>
 
         {/* Loader */}
